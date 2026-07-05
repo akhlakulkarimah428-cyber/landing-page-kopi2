@@ -157,7 +157,7 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
               <MapPin size={14} className="text-accent-gold shrink-0 mt-0.5" />
               <span>
                 {t('Nayaka Export Atelier Lab,', 'Nayaka Export Atelier Lab,')} <br />
-                {t('Jln. Raya Danau Toba No. 42, Medan, Sumatra, Indonesia', 'Jln. Raya Danau Toba No. 42, Medan, Sumatra, Indonesia')}
+                {t('Perum Kembang Permai, Bondowoso, Jawa Timur, Indonesia')}
               </span>
             </li>
             <li className="flex items-center space-x-3">
@@ -185,7 +185,7 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
             <li className="flex items-center space-x-3">
               <Compass size={14} className="text-accent-gold shrink-0" />
               <span className="font-display text-[10px] font-bold">2.1893° N, 99.0712° E ({t('Terroir Danau Toba', 'Lake Toba Terroir')})</span>
-            </li>
+            </liSumatra>
           </ul>
         </div>
 

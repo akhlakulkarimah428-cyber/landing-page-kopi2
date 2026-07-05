@@ -18,7 +18,7 @@ export const products: Product[] = [
     price: 14,
     description: 'Sebuah mahakarya dari Dataran Tinggi Gayo. Bersumber dari perkebunan organik teduh pada ketinggian 1.600 mdpl, lot mikro ini melalui fermentasi anaerobik selama 72 jam dalam tangki kedap udara, diikuti oleh pemrosesan honey. Menghasilkan body yang tebal dan bersirof dengan rasa buah tropis yang intens serta rempah halus.',
     descriptionEn: 'A masterpiece from the Gayo Highlands. Sourced from organic shade-grown estates at 1,600 masl, this micro-lot undergoes 72 hours of anaerobic fermentation in airtight tanks, followed by honey processing. Delivers a thick, syrupy mouthfeel with intense tropical fruits and delicate spices.',
-    image: PREMIUM_BAG_IMAGE,
+    image: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=800',
     rating: 5.0,
     process: 'Anaerobic Honey',
     processEn: 'Anaerobic Honey',
