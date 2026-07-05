@@ -12,14 +12,14 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguageState] = useState<Language>(() => {
-    const saved = localStorage.getItem('kaffa_language');
+    const saved = localStorage.getItem('nayaka_language');
     if (saved === 'id' || saved === 'en') return saved;
     return 'id'; // Default to Indonesian
   });
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem('kaffa_language', lang);
+    localStorage.setItem('nayaka_language', lang);
   };
 
   const t = (idText: string, enText: string) => {

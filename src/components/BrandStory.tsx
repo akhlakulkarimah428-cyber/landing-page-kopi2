@@ -50,7 +50,7 @@ export default function BrandStory() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20 items-end">
           <div className="lg:col-span-6 space-y-4">
             <span className="font-display text-[10px] uppercase tracking-[0.25em] text-accent-gold font-bold block">
-              {t('Kisah Hebat Kaffa Export', 'The Great Saga of Kaffa Export')}
+              {t('Kisah Hebat Nayaka Export', 'The Great Saga of Nayaka Export')}
             </span>
             <h2 className="font-display text-4xl md:text-5xl text-brand-text leading-tight font-extrabold tracking-tight max-w-lg">
               {t('Terroir Vulkanis Indonesia,', 'Indonesian Volcanic Terroirs,')} <br />

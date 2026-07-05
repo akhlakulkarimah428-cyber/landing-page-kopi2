@@ -37,7 +37,7 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
             className="flex flex-col items-start select-none group"
           >
             <span className="font-display text-2xl font-black tracking-widest text-white uppercase leading-none group-hover:text-accent-gold transition-colors duration-300">
-              Kaffa
+              Nayaka
             </span>
             <span className="font-display text-[10px] font-bold tracking-[0.25em] text-accent-gold uppercase leading-none mt-1">
               Export Atelier
@@ -46,8 +46,8 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
 
           <p className="font-sans text-xs md:text-sm text-white/50 leading-relaxed max-w-sm">
             {t(
-              'Kaffa Export Atelier adalah eksportir utama biji kopi hijau (green bean) spesialti Indonesia. Kami menghubungkan koperasi tani elit di dataran tinggi vulkanis dengan para penyangrai (roastery) dan importir global melalui kemitraan perdagangan langsung (direct trade) yang adil dan transparan.',
-              'Kaffa Export Atelier is a premier exporter of specialty Indonesian green coffee beans. We bridge elite farming cooperatives in high-altitude volcanic terroirs with global roasters and importers through fair, transparent direct trade partnerships.'
+              'Nayaka Export Atelier adalah eksportir utama biji kopi hijau (green bean) spesialti Indonesia. Kami menghubungkan koperasi tani elit di dataran tinggi vulkanis dengan para penyangrai (roastery) dan importir global melalui kemitraan perdagangan langsung (direct trade) yang adil dan transparan.',
+              'Nayaka Export Atelier is a premier exporter of specialty Indonesian green coffee beans. We bridge elite farming cooperatives in high-altitude volcanic terroirs with global roasters and importers through fair, transparent direct trade partnerships.'
             )}
           </p>
 
@@ -156,7 +156,7 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
             <li className="flex items-start space-x-3">
               <MapPin size={14} className="text-accent-gold shrink-0 mt-0.5" />
               <span>
-                {t('Kaffa Export Atelier Lab,', 'Kaffa Export Atelier Lab,')} <br />
+                {t('Nayaka Export Atelier Lab,', 'Nayaka Export Atelier Lab,')} <br />
                 {t('Jln. Raya Danau Toba No. 42, Medan, Sumatra, Indonesia', 'Jln. Raya Danau Toba No. 42, Medan, Sumatra, Indonesia')}
               </span>
             </li>
@@ -165,8 +165,8 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
               <a
                 href={`https://wa.me/6281234567890?text=${encodeURIComponent(
                   t(
-                    'Halo Kaffa Export Atelier, saya tertarik dengan kopi ekspor Anda. Bisa berdiskusi lebih lanjut?',
-                    'Hello Kaffa Export Atelier, I am interested in your export coffee. Can we discuss further?'
+                    'Halo Nayaka Export Atelier, saya tertarik dengan kopi ekspor Anda. Bisa berdiskusi lebih lanjut?',
+                    'Hello Nayaka Export Atelier, I am interested in your export coffee. Can we discuss further?'
                   )
                 )}`}
                 target="_blank"
@@ -178,8 +178,8 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
             </li>
             <li className="flex items-center space-x-3">
               <Mail size={14} className="text-accent-gold shrink-0" />
-              <a href="mailto:export@kaffa-atelier.com" className="hover:text-white transition-colors">
-                export@kaffa-atelier.com
+              <a href="mailto:export@nayaka-atelier.com" className="hover:text-white transition-colors">
+                export@nayaka-atelier.com
               </a>
             </li>
             <li className="flex items-center space-x-3">
@@ -193,7 +193,7 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
 
       {/* Copyright Footer credits */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[#F8F5F2]/45 font-display text-[10px] uppercase tracking-wider relative z-10 font-bold">
-        <p>{t('© 2026 Kaffa Export Atelier. Hak Cipta Dilindungi. Bersertifikat Spesialti SCA.', '© 2026 Kaffa Export Atelier. All Rights Reserved. SCA Specialty Certified.')}</p>
+        <p>{t('© 2026 Nayaka Export Atelier. Hak Cipta Dilindungi. Bersertifikat Spesialti SCA.', '© 2026 Nayaka Export Atelier. All Rights Reserved. SCA Specialty Certified.')}</p>
         <div className="flex space-x-6">
           <a href="#home" className="hover:text-white transition-colors">{t('Kebijakan Privasi', 'Privacy Policy')}</a>
           <a href="#home" className="hover:text-white transition-colors">{t('Syarat & Ketentuan', 'Terms & Conditions')}</a>

@@ -204,7 +204,7 @@ export default function Hero({ onShopClick }: HeroProps) {
             <div className="absolute top-0 right-0 w-32 h-32 bg-accent-gold/10 rounded-full filter blur-xl pointer-events-none" />
             
             <span className="font-mono text-[9px] uppercase tracking-[0.25em] text-accent-gold font-bold block">
-              {t('Galeri Operasional Kaffa', 'Kaffa Operational Gallery')}
+              {t('Galeri Operasional Nayaka', 'Nayaka Operational Gallery')}
             </span>
 
             {/* Slider Text Information with smooth transitions */}
@@ -354,7 +354,7 @@ export default function Hero({ onShopClick }: HeroProps) {
                     <Play size={20} className="fill-current ml-1" />
                   </motion.div>
                   <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-accent-gold font-bold">
-                    {t('Sinema Asal-Usul Kaffa Atelier', 'Origin Cinema Kaffa Atelier')}
+                    {t('Sinema Asal-Usul Nayaka Atelier', 'Origin Cinema Nayaka Atelier')}
                   </p>
                   <h3 className="font-display text-2xl md:text-3xl text-white font-extrabold tracking-tight leading-tight">
                     {t('Ziarah ke Perkebunan Ketinggian Ekstrem', 'Journey to Extreme Altitude Estates')}

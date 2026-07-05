@@ -23,7 +23,7 @@ export default function BrewingGuide() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-20 space-y-4">
           <span className="font-display text-[10px] uppercase tracking-[0.25em] text-accent-gold font-bold block">
-            {t('Edukasi Seduh Kaffa', 'Kaffa Brewing Education')}
+            {t('Edukasi Seduh Nayaka', 'Nayaka Brewing Education')}
           </span>
           <h2 className="font-display text-4xl md:text-5xl text-brand-text leading-tight font-extrabold tracking-tight">
             {t('Ritual Ekstraksi:', 'Extraction Ritual:')}<br />

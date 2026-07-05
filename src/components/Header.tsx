@@ -64,7 +64,7 @@ export default function Header({ activeTab, onNavClick, onShopClick }: HeaderPro
             </div>
             <div className="flex flex-col items-start leading-none">
               <span className="font-display text-lg font-bold tracking-tight text-primary-green transition-colors duration-300">
-                Kaffa Export
+                Nayaka Export
               </span>
               <span className="font-mono text-[8px] tracking-[0.25em] text-accent-gold uppercase mt-0.5 font-bold">
                 Atelier
@@ -125,8 +125,8 @@ export default function Header({ activeTab, onNavClick, onShopClick }: HeaderPro
             <a
               href={`https://wa.me/6281234567890?text=${encodeURIComponent(
                 t(
-                  'Halo Kaffa Export Atelier, saya tertarik dengan kopi ekspor Anda. Bisa berdiskusi lebih lanjut?',
-                  'Hello Kaffa Export Atelier, I am interested in your export coffee. Can we discuss further?'
+                  'Halo Nayaka Export Atelier, saya tertarik dengan kopi ekspor Anda. Bisa berdiskusi lebih lanjut?',
+                  'Hello Nayaka Export Atelier, I am interested in your export coffee. Can we discuss further?'
                 )
               )}`}
               target="_blank"
@@ -190,8 +190,8 @@ export default function Header({ activeTab, onNavClick, onShopClick }: HeaderPro
                 <a
                   href={`https://wa.me/6281234567890?text=${encodeURIComponent(
                     t(
-                      'Halo Kaffa Export Atelier, saya tertarik dengan kopi ekspor Anda. Bisa berdiskusi lebih lanjut?',
-                      'Hello Kaffa Export Atelier, I am interested in your export coffee. Can we discuss further?'
+                      'Halo Nayaka Export Atelier, saya tertarik dengan kopi ekspor Anda. Bisa berdiskusi lebih lanjut?',
+                      'Hello Nayaka Export Atelier, I am interested in your export coffee. Can we discuss further?'
                     )
                   )}`}
                   target="_blank"
@@ -202,7 +202,7 @@ export default function Header({ activeTab, onNavClick, onShopClick }: HeaderPro
                   {t('Hubungi Kami via WhatsApp', 'Contact Us via WhatsApp')}
                 </a>
                 <div className="flex justify-between items-center px-2 text-[10px] text-brand-gray font-mono">
-                  <span>© 2026 Kaffa Export Atelier</span>
+                  <span>© 2026 Nayaka Export Atelier</span>
                   <span>SCA Certified Specialty</span>
                 </div>
               </div>

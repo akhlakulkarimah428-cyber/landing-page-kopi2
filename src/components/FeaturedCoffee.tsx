@@ -325,8 +325,8 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
                         <a
                           href={`https://wa.me/6281234567890?text=${encodeURIComponent(
                             language === 'en'
-                              ? `Hello Kaffa Export Atelier, I am interested in *${product.nameEn || product.name}* (SCA Score: ${product.scaScore || 'N/A'}). Can I get more details?`
-                              : `Halo Kaffa Export Atelier, saya tertarik dengan kopi *${product.name}* (Skor SCA: ${product.scaScore || 'N/A'}). Bisa mohon info lebih lanjut?`
+                              ? `Hello Nayaka Export Atelier, I am interested in *${product.nameEn || product.name}* (SCA Score: ${product.scaScore || 'N/A'}). Can I get more details?`
+                              : `Halo Nayaka Export Atelier, saya tertarik dengan kopi *${product.name}* (Skor SCA: ${product.scaScore || 'N/A'}). Bisa mohon info lebih lanjut?`
                           )}`}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -549,8 +549,8 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
                     <a
                       href={`https://wa.me/6281234567890?text=${encodeURIComponent(
                         language === 'en'
-                          ? `Hello Kaffa Export Atelier, I am interested in *${activeProductModal.nameEn || activeProductModal.name}* (SCA Score: ${activeProductModal.scaScore || 'N/A'}). Could I get more details on ordering or export samples?`
-                          : `Halo Kaffa Export Atelier, saya tertarik dengan kopi *${activeProductModal.name}* (Skor SCA: ${activeProductModal.scaScore || 'N/A'}). Bisa mohon info lebih lanjut untuk pemesanan/sampel ekspor?`
+                          ? `Hello Nayaka Export Atelier, I am interested in *${activeProductModal.nameEn || activeProductModal.name}* (SCA Score: ${activeProductModal.scaScore || 'N/A'}). Could I get more details on ordering or export samples?`
+                          : `Halo Nayaka Export Atelier, saya tertarik dengan kopi *${activeProductModal.name}* (Skor SCA: ${activeProductModal.scaScore || 'N/A'}). Bisa mohon info lebih lanjut untuk pemesanan/sampel ekspor?`
                       )}`}
                       target="_blank"
                       rel="noopener noreferrer"

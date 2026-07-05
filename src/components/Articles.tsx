@@ -41,8 +41,8 @@ export default function Articles() {
           ? 'Modern science confirms that the tactile ritual of weighing, grinding, and pouring water is deeply meditative. When we focus entirely on the stream of water exiting the gooseneck kettle, we calm the amygdala—the brain\'s threat detector—and activate the parasympathetic nervous system.'
           : 'Sains modern menegaskan bahwa ritual taktil dalam menimbang, menggiling, dan menuangkan air sangatlah meditatif. Ketika kita fokus sepenuhnya pada aliran air yang keluar dari ketel leher angsa, kita menenangkan amygdala—pusat pendeteksi ancaman di otak—dan mengaktifkan sistem saraf parasimpatis.',
         p2: language === 'en'
-          ? 'At Kaffa Export, we treat brewing not as a mechanical task of extraction, but as a culinary symphony. The paper filter acts as a canvas, the fresh coffee grounds are the composition, and the hot water is the dynamic force releasing locked aromatic compounds. Inhaling sweet jasmine steam and fresh peach notes during the 45-second bloom connects us deeply with nature and the generations of growers who spent months nurturing these seeds.'
-          : 'Di Kaffa Export, kami memperlakukan penyeduhan bukan sebagai tugas ekstraksi mekanis, melainkan sebagai simfoni kuliner. Filter kertas bertindak sebagai kanvas, gilingan kopi segar adalah komposisi lagunya, dan air panas adalah kekuatan dinamis yang melepaskan senyawa aromatik yang terkunci. Menghirup uap melati manis dan aroma buah persik yang segar selama proses blooming 45 detik adalah cara terhubung mendalam dengan alam dan petani generasi yang menghabiskan waktu berbulan-bulan merawat benih ini.',
+          ? 'At Nayaka Export, we treat brewing not as a mechanical task of extraction, but as a culinary symphony. The paper filter acts as a canvas, the fresh coffee grounds are the composition, and the hot water is the dynamic force releasing locked aromatic compounds. Inhaling sweet jasmine steam and fresh peach notes during the 45-second bloom connects us deeply with nature and the generations of growers who spent months nurturing these seeds.'
+          : 'Di Nayaka Export, kami memperlakukan penyeduhan bukan sebagai tugas ekstraksi mekanis, melainkan sebagai simfoni kuliner. Filter kertas bertindak sebagai kanvas, gilingan kopi segar adalah komposisi lagunya, dan air panas adalah kekuatan dinamis yang melepaskan senyawa aromatik yang terkunci. Menghirup uap melati manis dan aroma buah persik yang segar selama proses blooming 45 detik adalah cara terhubung mendalam dengan alam dan petani generasi yang menghabiskan waktu berbulan-bulan merawat benih ini.',
         p3: language === 'en'
           ? 'To practice this ritual at home, start by silencing all notifications. Grind your coffee beans manually, feeling the resistance of the seeds fracturing into powder, and pour water in a continuous, calming spiral. Watch the dark coffee oils bubble to the surface. Sip slowly, tasting how the flavors evolve as the cup cools.'
           : 'Untuk menerapkan ritual ini di rumah Anda, mulailah dengan mematikan semua notifikasi. Giling biji kopi Anda secara manual, rasakan hambatan benih yang hancur menjadi bubuk, dan tuangkan air dalam spiral yang berkelanjutan dan menenangkan. Saksikan minyak kopi gelap menggelembung ke permukaan. Minum secara perlahan, rasakan bagaimana rasa berkembang seiring cup mendingin.'
@@ -55,8 +55,8 @@ export default function Articles() {
           ? 'For generations, smallholder coffee growers have been at the mercy of traditional middle-men who depress purchase prices to maximize wholesale exporter profits. When commodity indexes plunge, grower families often operate at a net loss, unable to afford organic fertilizers or basic farm labor.'
           : 'Selama beberapa generasi, petani kopi kecil berada di bawah belas kasihan makelar tradisional yang menekan harga beli untuk memaksimalkan keuntungan eksportir grosir. Ketika indeks komoditas anjlok, keluarga petani sering kali mengalami kerugian bersih, bahkan tidak mampu membeli pupuk organik atau membiayai tenaga kerja perkebunan dasar.',
         p2: language === 'en'
-          ? 'Kaffa Export\'s Direct Trade model guarantees that 100% of our premium prices flow directly to the farmers themselves. We establish multi-year contracts independent of volatile C-market commodity indexes, paying up to 400% higher than globally recognized Fair Trade minimums. This structural fairness allows our partner farmers to invest in climate-friendly shade trees, drying beds, and clean water filtration systems.'
-          : 'Model Perdagangan Langsung (Direct Trade) Kaffa Export menjamin bahwa 100% harga premium kami langsung mengalir kepada para petani itu sendiri. Kami menetapkan kontrak multi-tahun yang independen dari indeks komoditas C-market yang fluktuatif, membayar hingga 400% lebih tinggi dari harga minimum Fair Trade yang diakui secara global. Keadilan struktural ini memungkinkan petani mitra kami berinvestasi pada pohon pelindung yang ramah iklim, para-para jemur, dan filter pemurnian air bersih di pabrik mikro.',
+          ? 'Nayaka Export\'s Direct Trade model guarantees that 100% of our premium prices flow directly to the farmers themselves. We establish multi-year contracts independent of volatile C-market commodity indexes, paying up to 400% higher than globally recognized Fair Trade minimums. This structural fairness allows our partner farmers to invest in climate-friendly shade trees, drying beds, and clean water filtration systems.'
+          : 'Model Perdagangan Langsung (Direct Trade) Nayaka Export menjamin bahwa 100% harga premium kami langsung mengalir kepada para petani itu sendiri. Kami menetapkan kontrak multi-tahun yang independen dari indeks komoditas C-market yang fluktuatif, membayar hingga 400% lebih tinggi dari harga minimum Fair Trade yang diakui secara global. Keadilan struktural ini memungkinkan petani mitra kami berinvestasi pada pohon pelindung yang ramah iklim, para-para jemur, dan filter pemurnian air bersih di pabrik mikro.',
         p3: language === 'en'
           ? 'By visiting our partner estates several times throughout seasonal cycles, we co-develop farming guidelines that protect local aquifers. This ensures that every cup of coffee you brew helps preserve clean mountain rivers, cloud forest habitats, and stable generational prosperity for hundreds of farming families.'
           : 'Dengan mengunjungi perkebunan mitra kami beberapa kali selama siklus musiman, kami bersama-sama mengembangkan panduan pertanian yang melindungi akuifer hutan setempat. Ini memastikan bahwa setiap cangkir kopi yang Anda seduh turut melestarikan aliran sungai pegunungan yang bersih, hutan kabut yang terjaga, dan kemakmuran generasi yang stabil bagi ratusan keluarga petani.'
@@ -92,7 +92,7 @@ export default function Articles() {
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-20 space-y-4">
           <span className="font-display text-[10px] uppercase tracking-[0.25em] text-accent-gold font-bold block">
-            {t('Kabar Kaffa Export', 'Kaffa Export News')}
+            {t('Kabar Nayaka Export', 'Nayaka Export News')}
           </span>
           <h2 className="font-display text-4xl md:text-5xl text-brand-text leading-tight font-extrabold tracking-tight">
             {t('Jurnal Edukasi', 'Educational Journal')} <br />
@@ -302,7 +302,7 @@ export default function Articles() {
                         )}
                       </p>
                       <span className="font-display text-[9px] uppercase tracking-widest text-brand-gray font-bold block text-right">
-                        {t('— Ahli Sangrai Utama Kaffa Export', '— Master Roaster, Kaffa Export')}
+                        {t('— Ahli Sangrai Utama Nayaka Export', '— Master Roaster, Nayaka Export')}
                       </span>
                     </div>
 
@@ -320,7 +320,7 @@ export default function Articles() {
 
                 {/* Footer Signature Inside Sheet */}
                 <div className="bg-light-green/10 p-8 border-t border-primary-green/5 flex items-center justify-between text-xs text-brand-gray font-display font-bold mt-auto">
-                  <span>© 2026 Kaffa Export</span>
+                  <span>© 2026 Nayaka Export</span>
                   <span>{t('Seri Kebun Kemitraan', 'Partnership Estate Series')}</span>
                 </div>
 
