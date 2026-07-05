@@ -237,7 +237,7 @@ export const brewGuides: BrewGuide[] = [
     id: 'bg1',
     name: 'Protokol Cupping SCA (Standar Ekspor)',
     nameEn: 'SCA Cupping Protocol (Export Standard)',
-    photo: BREWING_POUR_OVER_IMAGE,
+    photo: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800',
     ratio: '1:18.18 (8.25g Kopi / 150g Air)',
     temperature: '93°C / 200°F',
     time: '4:00 Menit perendaman',

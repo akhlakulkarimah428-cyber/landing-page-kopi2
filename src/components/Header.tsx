@@ -59,9 +59,6 @@ export default function Header({ activeTab, onNavClick, onShopClick }: HeaderPro
             }}
             className="flex items-center space-x-2 select-none group"
           >
-            <div className="w-8 h-8 rounded-full bg-primary-green flex items-center justify-center text-white font-display font-extrabold text-sm tracking-tighter">
-              K
-            </div>
             <div className="flex flex-col items-start leading-none">
               <span className="font-display text-lg font-bold tracking-tight text-primary-green transition-colors duration-300">
                 Nayaka Export
