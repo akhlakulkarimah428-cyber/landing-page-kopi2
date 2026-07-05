@@ -123,8 +123,13 @@ export default function FinalCTA({ onShopClick }: FinalCTAProps) {
                   <h4 className="font-display text-lg font-bold text-white">{t('Berhasil Bergabung', 'Successfully Joined')}</h4>
                   <p className="text-xs text-brand-bg/70 font-sans max-w-sm">
                     {t(
+<<<<<<< HEAD
                       'Anda sekarang terdaftar di Jaringan Importir Nayaka Export. Kami akan mengirimkan katalog stok terbaru dan laporan sensoris laboratorium langsung ke inbox Anda.',
                       'You are now registered in the Nayaka Export Importer Network. We will deliver the latest stock catalogs and laboratory sensory reports directly to your inbox.'
+=======
+                      'Anda sekarang terdaftar di Jaringan Importir Kaffa Export. Kami akan mengirimkan katalog stok terbaru dan laporan sensoris laboratorium langsung ke inbox Anda.',
+                      'You are now registered in the Kaffa Export Importer Network. We will deliver the latest stock catalogs and laboratory sensory reports directly to your inbox.'
+>>>>>>> bc773b7db2f2c47e389b76fb4aac0f17dd9f3743
                     )}
                   </p>
                 </motion.div>

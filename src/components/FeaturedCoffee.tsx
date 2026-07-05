@@ -325,8 +325,13 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
                         <a
                           href={`https://wa.me/6281234567890?text=${encodeURIComponent(
                             language === 'en'
+<<<<<<< HEAD
                               ? `Hello Nayaka Export Atelier, I am interested in *${product.nameEn || product.name}* (SCA Score: ${product.scaScore || 'N/A'}). Can I get more details?`
                               : `Halo Nayaka Export Atelier, saya tertarik dengan kopi *${product.name}* (Skor SCA: ${product.scaScore || 'N/A'}). Bisa mohon info lebih lanjut?`
+=======
+                              ? `Hello Kaffa Export Atelier, I am interested in *${product.nameEn || product.name}* (SCA Score: ${product.scaScore || 'N/A'}). Can I get more details?`
+                              : `Halo Kaffa Export Atelier, saya tertarik dengan kopi *${product.name}* (Skor SCA: ${product.scaScore || 'N/A'}). Bisa mohon info lebih lanjut?`
+>>>>>>> bc773b7db2f2c47e389b76fb4aac0f17dd9f3743
                           )}`}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -549,8 +554,13 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
                     <a
                       href={`https://wa.me/6281234567890?text=${encodeURIComponent(
                         language === 'en'
+<<<<<<< HEAD
                           ? `Hello Nayaka Export Atelier, I am interested in *${activeProductModal.nameEn || activeProductModal.name}* (SCA Score: ${activeProductModal.scaScore || 'N/A'}). Could I get more details on ordering or export samples?`
                           : `Halo Nayaka Export Atelier, saya tertarik dengan kopi *${activeProductModal.name}* (Skor SCA: ${activeProductModal.scaScore || 'N/A'}). Bisa mohon info lebih lanjut untuk pemesanan/sampel ekspor?`
+=======
+                          ? `Hello Kaffa Export Atelier, I am interested in *${activeProductModal.nameEn || activeProductModal.name}* (SCA Score: ${activeProductModal.scaScore || 'N/A'}). Could I get more details on ordering or export samples?`
+                          : `Halo Kaffa Export Atelier, saya tertarik dengan kopi *${activeProductModal.name}* (Skor SCA: ${activeProductModal.scaScore || 'N/A'}). Bisa mohon info lebih lanjut untuk pemesanan/sampel ekspor?`
+>>>>>>> bc773b7db2f2c47e389b76fb4aac0f17dd9f3743
                       )}`}
                       target="_blank"
                       rel="noopener noreferrer"

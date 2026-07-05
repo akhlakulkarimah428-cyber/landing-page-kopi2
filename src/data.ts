@@ -303,8 +303,13 @@ export const testimonials: Testimonial[] = [
     roleEn: 'Managing Director, Zenith Specialty Roasters (Tokyo)',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200',
     rating: 5,
+<<<<<<< HEAD
     quote: "Nayaka Atelier telah mengubah cara kami mendatangkan kopi dari Indonesia. Gayo Anaerobic Honey mereka mendapatkan skor cupping luar biasa 90.5 dan tiba di Tokyo dalam kemasan vakum tanpa degradasi kelembapan sedikit pun. Integritas ekspor B2B yang tiada tanding.",
     quoteEn: "Nayaka Atelier has transformed how we source coffee from Indonesia. Their Gayo Anaerobic Honey scored an outstanding 90.5 and arrived in Tokyo in vacuum boxes without a single drop in moisture stability. Unmatched B2B export integrity."
+=======
+    quote: "Kaffa Atelier telah mengubah cara kami mendatangkan kopi dari Indonesia. Gayo Anaerobic Honey mereka mendapatkan skor cupping luar biasa 90.5 dan tiba di Tokyo dalam kemasan vakum tanpa degradasi kelembapan sedikit pun. Integritas ekspor B2B yang tiada tanding.",
+    quoteEn: "Kaffa Atelier has transformed how we source coffee from Indonesia. Their Gayo Anaerobic Honey scored an outstanding 90.5 and arrived in Tokyo in vacuum boxes without a single drop in moisture stability. Unmatched B2B export integrity."
+>>>>>>> bc773b7db2f2c47e389b76fb4aac0f17dd9f3743
   },
   {
     id: 't2',
@@ -313,8 +318,13 @@ export const testimonials: Testimonial[] = [
     roleEn: 'Sourcing Lead, Seattle Coffee Merchants',
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200',
     rating: 5,
+<<<<<<< HEAD
     quote: "Menemukan lot mikro proses carbonic maceration dari Bali yang konsisten dulunya adalah tantangan logistik besar. Nayaka Export menyediakan data ketertelusuran langsung, sampel uji DHL cepat, dan sertifikasi fitosanitari yang sempurna. Eksportir yang sangat direkomendasikan.",
     quoteEn: "Sourcing consistent carbonic maceration micro-lots from Bali was once a major logistical challenge. Nayaka Export provides live traceability data, rapid DHL test samples, and perfect phytosanitary certification. Highly recommended exporter."
+=======
+    quote: "Menemukan lot mikro proses carbonic maceration dari Bali yang konsisten dulunya adalah tantangan logistik besar. Kaffa Export menyediakan data ketertelusuran langsung, sampel uji DHL cepat, dan sertifikasi fitosanitari yang sempurna. Eksportir yang sangat direkomendasikan.",
+    quoteEn: "Sourcing consistent carbonic maceration micro-lots from Bali was once a major logistical challenge. Kaffa Export provides live traceability data, rapid DHL test samples, and perfect phytosanitary certification. Highly recommended exporter."
+>>>>>>> bc773b7db2f2c47e389b76fb4aac0f17dd9f3743
   },
   {
     id: 't3',
@@ -323,8 +333,13 @@ export const testimonials: Testimonial[] = [
     roleEn: 'Head of Quality, Hamburg Coffee Trading House',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200',
     rating: 5,
+<<<<<<< HEAD
     quote: "Metrik pelacakan lot Java Preanger 40 sangat akurat. Kami sangat menghargai transparansi lengkap mereka—ketinggian lahan, catatan kelembapan, dan jumlah cacat biji benar-benar tepat. Nayaka mengirimkan biji hijau kelas kompetisi dengan profesionalisme mutlak.",
     quoteEn: "The lot tracking metrics for Java Preanger 40 are incredibly accurate. We highly appreciate their complete transparency—elevation, moisture records, and defect counts are absolutely spot on. Nayaka delivers competition-grade green beans with absolute professionalism."
+=======
+    quote: "Metrik pelacakan lot Java Preanger 40 sangat akurat. Kami sangat menghargai transparansi lengkap mereka—ketinggian lahan, catatan kelembapan, dan jumlah cacat biji benar-benar tepat. Kaffa mengirimkan biji hijau kelas kompetisi dengan profesionalisme mutlak.",
+    quoteEn: "The lot tracking metrics for Java Preanger 40 are incredibly accurate. We highly appreciate their complete transparency—elevation, moisture records, and defect counts are absolutely spot on. Kaffa delivers competition-grade green beans with absolute professionalism."
+>>>>>>> bc773b7db2f2c47e389b76fb4aac0f17dd9f3743
   }
 ];
 

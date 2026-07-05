@@ -36,7 +36,11 @@ export default function App() {
   // Setup visual analytics console message for fun branding
   useEffect(() => {
     console.log(
+<<<<<<< HEAD
       '%c NAYAKA ATELIER %c Sown in volcanic mist, harvested with reverence.',
+=======
+      '%c KAFFA ATELIER %c Sown in volcanic mist, harvested with reverence.',
+>>>>>>> bc773b7db2f2c47e389b76fb4aac0f17dd9f3743
       'background: #2F5D50; color: #C7A76C; padding: 6px 12px; font-weight: bold; font-family: serif; font-size: 14px; border-radius: 4px;',
       'background: #EAF5EF; color: #202020; padding: 6px 12px; font-family: sans-serif; font-size: 12px;'
     );
@@ -169,8 +173,13 @@ export default function App() {
         <a
           href={`https://wa.me/6281234567890?text=${encodeURIComponent(
             t(
+<<<<<<< HEAD
               'Halo Nayaka Export Atelier, saya tertarik dengan kopi ekspor Anda. Bisa berdiskusi lebih lanjut?',
               'Hello Nayaka Export Atelier, I am interested in your export coffee. Can we discuss further?'
+=======
+              'Halo Kaffa Export Atelier, saya tertarik dengan kopi ekspor Anda. Bisa berdiskusi lebih lanjut?',
+              'Hello Kaffa Export Atelier, I am interested in your export coffee. Can we discuss further?'
+>>>>>>> bc773b7db2f2c47e389b76fb4aac0f17dd9f3743
             )
           )}`}
           target="_blank"
@@ -182,7 +191,11 @@ export default function App() {
               <Phone size={15} />
             </div>
             <div>
+<<<<<<< HEAD
               <p className="font-display text-[11px] font-bold tracking-wide text-accent-gold uppercase">Nayaka Atelier</p>
+=======
+              <p className="font-display text-[11px] font-bold tracking-wide text-accent-gold uppercase">Kaffa Atelier</p>
+>>>>>>> bc773b7db2f2c47e389b76fb4aac0f17dd9f3743
               <p className="font-sans text-[11px] font-semibold text-white/85">{t('Hubungi via WhatsApp', 'Contact via WhatsApp')}</p>
             </div>
           </div>

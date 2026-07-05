@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "Nayaka Atelier",
+=======
+  "name": "Kaffa Atelier",
+>>>>>>> bc773b7db2f2c47e389b76fb4aac0f17dd9f3743
   "description": "A luxury editorial specialty coffee brand landing page featuring artisanal storytelling, brewing guides, and a premium digital experience.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
