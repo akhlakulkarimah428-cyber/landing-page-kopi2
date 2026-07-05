@@ -154,7 +154,6 @@ export default function Hero({ onShopClick }: HeroProps) {
               className="bg-accent-gold hover:bg-white text-white hover:text-primary-green px-7 py-4 rounded-full text-[11px] font-display font-bold uppercase tracking-widest transition-all duration-300 shadow-luxury hover:shadow-luxury-hover hover:-translate-y-0.5 flex items-center justify-center space-x-2 cursor-pointer border border-accent-gold/20"
             >
               <span>{t('Buka Dokumen Penawaran', 'Open Offer Sheet')}</span>
-              <ArrowRight size={12} />
             </button>
 
             <button

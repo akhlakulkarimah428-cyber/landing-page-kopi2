@@ -134,7 +134,6 @@ export default function Header({ activeTab, onNavClick, onShopClick }: HeaderPro
               className="hidden md:flex items-center space-x-2 bg-primary-green hover:bg-coffee-brown text-white px-5 py-2.5 rounded-full text-xs font-display font-bold uppercase tracking-widest transition-all duration-300 hover:shadow-luxury group cursor-pointer border border-primary-green/10 font-semibold"
             >
               <span>{t('Hubungi Kami', 'Contact Us')}</span>
-              <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform duration-300" />
             </a>
 
             {/* Mobile Menu Toggle */}

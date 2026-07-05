@@ -415,7 +415,6 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
               className="bg-primary-green hover:bg-accent-gold text-white font-display text-[10px] font-bold uppercase tracking-[0.2em] px-8 py-4.5 rounded-full shadow-luxury hover:shadow-luxury-hover transition-all duration-300 inline-flex items-center space-x-3 cursor-pointer"
             >
               <span>{t('Jelajahi Seluruh Katalog Ekspor', 'Explore Full Export Catalog')}</span>
-              <ArrowRight size={14} />
             </motion.button>
           </div>
         )}

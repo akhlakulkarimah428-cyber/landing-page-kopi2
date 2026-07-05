@@ -173,7 +173,7 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors"
               >
-                +62 812-3456-7890 (WhatsApp)
+                +62 812-3086-0124 (WhatsApp)
               </a>
             </li>
             <li className="flex items-center space-x-3">
@@ -185,7 +185,7 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
             <li className="flex items-center space-x-3">
               <Compass size={14} className="text-accent-gold shrink-0" />
               <span className="font-display text-[10px] font-bold">2.1893° N, 99.0712° E ({t('Terroir Danau Toba', 'Lake Toba Terroir')})</span>
-            </liSumatra>
+            </li>
           </ul>
         </div>
 
