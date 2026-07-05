@@ -323,7 +323,7 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
                       </button>
                       {product.stockStatus !== 'Sold Out' && (
                         <a
-                          href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+                          href={`https://wa.me/6281230860124?text=${encodeURIComponent(
                             language === 'en'
                               ? `Hello Nayaka Export Atelier, I am interested in *${product.nameEn || product.name}* (SCA Score: ${product.scaScore || 'N/A'}). Can I get more details?`
                               : `Halo Nayaka Export Atelier, saya tertarik dengan kopi *${product.name}* (Skor SCA: ${product.scaScore || 'N/A'}). Bisa mohon info lebih lanjut?`
@@ -546,7 +546,7 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
                     </div>
 
                     <a
-                      href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+                      href={`https://wa.me/6281230860124?text=${encodeURIComponent(
                         language === 'en'
                           ? `Hello Nayaka Export Atelier, I am interested in *${activeProductModal.nameEn || activeProductModal.name}* (SCA Score: ${activeProductModal.scaScore || 'N/A'}). Could I get more details on ordering or export samples?`
                           : `Halo Nayaka Export Atelier, saya tertarik dengan kopi *${activeProductModal.name}* (Skor SCA: ${activeProductModal.scaScore || 'N/A'}). Bisa mohon info lebih lanjut untuk pemesanan/sampel ekspor?`

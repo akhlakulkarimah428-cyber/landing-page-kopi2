@@ -167,7 +167,7 @@ export default function App() {
         className="md:hidden fixed bottom-6 left-6 right-6 z-40"
       >
         <a
-          href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+          href={`https://wa.me/6281230860124?text=${encodeURIComponent(
             t(
               'Halo Nayaka Export Atelier, saya tertarik dengan kopi ekspor Anda. Bisa berdiskusi lebih lanjut?',
               'Hello Nayaka Export Atelier, I am interested in your export coffee. Can we discuss further?'

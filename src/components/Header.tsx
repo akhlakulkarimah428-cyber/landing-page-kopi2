@@ -120,7 +120,7 @@ export default function Header({ activeTab, onNavClick, onShopClick }: HeaderPro
 
             {/* Shop CTA Button */}
             <a
-              href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+              href={`https://wa.me/6281230860124?text=${encodeURIComponent(
                 t(
                   'Halo Nayaka Export Atelier, saya tertarik dengan kopi ekspor Anda. Bisa berdiskusi lebih lanjut?',
                   'Hello Nayaka Export Atelier, I am interested in your export coffee. Can we discuss further?'
@@ -184,7 +184,7 @@ export default function Header({ activeTab, onNavClick, onShopClick }: HeaderPro
               <div className="h-[1px] bg-primary-green/10" />
               <div className="flex flex-col space-y-3">
                 <a
-                  href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+                  href={`https://wa.me/6281230860124?text=${encodeURIComponent(
                     t(
                       'Halo Nayaka Export Atelier, saya tertarik dengan kopi ekspor Anda. Bisa berdiskusi lebih lanjut?',
                       'Hello Nayaka Export Atelier, I am interested in your export coffee. Can we discuss further?'

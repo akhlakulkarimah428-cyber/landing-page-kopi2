@@ -163,7 +163,7 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
             <li className="flex items-center space-x-3">
               <Phone size={14} className="text-accent-gold shrink-0" />
               <a
-                href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+                href={`https://wa.me/6281230860124?text=${encodeURIComponent(
                   t(
                     'Halo Nayaka Export Atelier, saya tertarik dengan kopi ekspor Anda. Bisa berdiskusi lebih lanjut?',
                     'Hello Nayaka Export Atelier, I am interested in your export coffee. Can we discuss further?'
