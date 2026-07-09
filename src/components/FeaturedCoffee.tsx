@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
-  Star, Eye, Phone, X, ArrowRight, ShieldCheck, 
-  Search, SlidersHorizontal, Award, Compass, Sparkles, Tag, ChevronDown 
+  Eye, Phone, X, ArrowRight, 
+  Search, SlidersHorizontal, Award, Compass, ChevronDown 
 } from 'lucide-react';
 import { products } from '../data';
 import { Product } from '../types';
@@ -15,6 +16,7 @@ interface FeaturedCoffeeProps {
 
 export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCatalog }: FeaturedCoffeeProps = {}) {
   const { t, language } = useLanguage();
+  const navigate = useNavigate();
 
   // Filter and Search States
   const [searchQuery, setSearchQuery] = useState('');
@@ -22,9 +24,6 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
   const [selectedProcess, setSelectedProcess] = useState<string>('All');
   const [selectedSort, setSelectedSort] = useState<string>('featured');
   const [showAdvancedFilters, setShowAdvancedFilters] = useState(false);
-
-  // Modal and Interactive States
-  const [activeProductModal, setActiveProductModal] = useState<Product | null>(null);
 
   // Extract all unique processing methods for filter list
   const allProcesses = ['All', ...Array.from(new Set(products.map(p => p.process).filter(Boolean))) as string[]];
@@ -57,8 +56,8 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
 
   const displayProducts = isHomepageOnly ? products.slice(0, 3) : sortedProducts;
 
-  const handleOpenModal = (product: Product) => {
-    setActiveProductModal(product);
+  const handleViewDetail = (product: Product) => {
+    navigate('/product/' + product.id);
   };
 
   return (
@@ -73,16 +72,16 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
         {isHomepageOnly ? (
           <div className="text-center max-w-2xl mx-auto mb-20 space-y-4">
             <span className="font-display text-[10px] uppercase tracking-[0.25em] text-accent-gold font-bold block">
-              {t('Featured Coffee • Kopi Unggulan', 'Featured Coffee')}
+              {t('Pilihan Unggulan', 'Featured Selection')}
             </span>
             <h2 className="font-display text-4xl md:text-5xl text-brand-text leading-tight font-extrabold tracking-tight">
-              {t('Biji Kopi Spesialti Terbaik Indonesia', 'Indonesia\'s Finest Specialty Coffee Beans')} <br />
-              <span className="italic font-normal text-primary-green">{t('Untuk Roastery Global Anda', 'For Your Global Roastery')}</span>
+              {t('Kopi Terbaik Indonesia', 'Indonesia\'s Finest Coffee')} <br />
+              <span className="italic font-normal text-primary-green">{t('Langsung ke Roastery Anda', 'Straight to Your Roastery')}</span>
             </h2>
             <p className="font-sans text-xs md:text-sm text-brand-gray leading-relaxed max-w-xl mx-auto">
               {t(
-                '3 varietas single-origin premium bersertifikat SCA yang paling digemari oleh mitra sangrai (roastery) internasional kami. Sourced langsung dengan kemasan hermetis.',
-                '3 premium single-origin SCA-certified varieties most favored by our international roasting partners. Sourced directly with hermetic packaging.'
+                'Tiga varian single-origin pilihan — favorit mitra roastery global kami. Langsung dari kebun, disortir ketat, dan dikemas hermetis siap kirim.',
+                'Three handpicked single-origin varieties — favorites among our global roastery partners. Straight from the farm, tightly sorted, hermetically sealed.'
               )}
             </p>
             <div className="w-12 h-[1.5px] bg-accent-gold mx-auto mt-6" />
@@ -93,17 +92,17 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
               <div className="flex items-center space-x-2">
                 <span className="h-[1px] w-8 bg-accent-gold" />
                 <span className="font-display text-[10px] uppercase tracking-[0.25em] text-accent-gold font-bold block">
-                  {t('Katalog Ekspor Kopi Spesialti', 'Specialty Coffee Export Catalog')}
+                  {t('Katalog Ekspor Kopi', 'Coffee Export Catalog')}
                 </span>
               </div>
               <h2 className="font-display text-4xl md:text-5xl text-brand-text leading-tight font-extrabold tracking-tight">
-                {t('Koleksi Unggulan', 'Featured Collection')} <br />
-                <span className="italic font-normal text-primary-green">{t('Green Bean & Roasted Cargo', 'Green Bean & Roasted Cargo')}</span>
+                {t('Koleksi Pilihan', 'Curated Collection')} <br />
+                <span className="italic font-normal text-primary-green">{t('Green Bean & Roasted', 'Green Bean & Roasted')}</span>
               </h2>
               <p className="font-sans text-xs md:text-sm text-brand-gray max-w-xl">
                 {t(
-                  'Lot mikro direct-trade pilihan dari koperasi petani elit Indonesia. Skor cupping SCA bersertifikat 88+, sortasi triple-picked, kadar air stabil, dan dikemas secara hermetis.',
-                  'Direct-trade micro-lots handpicked from elite Indonesian grower cooperatives. Certified SCA cupping score 88+, triple-picked sorting, stable moisture, and hermetically packaged.'
+                  'Lot mikro direct-trade dari koperasi petani terbaik Indonesia. Skor SCA 88+, sortasi tiga kali, kadar air stabil, dan dikemas hermetis — siap kirim ke roastery Anda.',
+                  'Direct-trade micro-lots from Indonesia\'s finest grower cooperatives. SCA 88+, triple-sorted, stable moisture, hermetically packed — ready for your roastery.'
                 )}
               </p>
             </div>
@@ -262,7 +261,7 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
         ) : (
           <motion.div
             layout
-            className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ${isHomepageOnly ? 'lg:grid-cols-3' : 'lg:grid-cols-4'}`}
+            className={`flex flex-wrap justify-center gap-8`}
           >
             <AnimatePresence mode="popLayout">
               {displayProducts.map((product) => (
@@ -273,7 +272,7 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.4 }}
                   key={product.id}
-                  className="bg-white rounded-[24px] border border-primary-green/10 overflow-hidden group shadow-luxury hover:shadow-luxury-hover transition-all duration-500 hover:-translate-y-1.5 flex flex-col justify-between h-full"
+                  className="bg-white rounded-[24px] border border-primary-green/10 overflow-hidden group shadow-luxury hover:shadow-luxury-hover transition-all duration-500 hover:-translate-y-1.5 flex flex-col justify-between h-full w-full sm:w-72 lg:w-80"
                 >
                   
                   {/* Product Thumbnail container */}
@@ -315,7 +314,7 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
                     {/* Overlays Hover Buttons */}
                     <div className="absolute inset-0 flex items-center justify-center space-x-3 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
                       <button
-                        onClick={() => handleOpenModal(product)}
+                        onClick={() => handleViewDetail(product)}
                         className="p-3.5 bg-white text-primary-green hover:bg-primary-green hover:text-white rounded-full transition-all duration-300 shadow-lg transform hover:scale-110 cursor-pointer"
                         aria-label={t('Tampilkan detail produk', 'View product details')}
                       >
@@ -382,11 +381,11 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
                       <div className="flex flex-col">
                         <span className="font-display text-[9px] text-brand-gray uppercase tracking-widest leading-none mb-1">FOB / KG</span>
                         <span className="font-display text-lg font-bold text-primary-green leading-none">
-                          ${product.price}.00
+                          Rp {(product.price * 16000).toLocaleString('id-ID')}
                         </span>
                       </div>
                       <button
-                        onClick={() => handleOpenModal(product)}
+                        onClick={() => handleViewDetail(product)}
                         className={`font-display text-[10px] uppercase tracking-wider font-bold flex items-center space-x-1.5 transition-colors duration-300 cursor-pointer ${
                           product.stockStatus === 'Sold Out'
                             ? 'text-brand-gray/35 cursor-not-allowed'
@@ -419,161 +418,7 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
           </div>
         )}
 
-        {/* Product Detail Modal */}
-        <AnimatePresence>
-          {activeProductModal && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 z-50 bg-[#202020]/70 flex items-center justify-center p-4 md:p-6 backdrop-blur-md"
-            >
-              <motion.div
-                initial={{ scale: 0.95, y: 30 }}
-                animate={{ scale: 1, y: 0 }}
-                exit={{ scale: 0.95, y: 30 }}
-                transition={{ type: 'spring', damping: 25, stiffness: 150 }}
-                className="bg-white rounded-[24px] overflow-hidden max-w-4xl w-full grid grid-cols-1 md:grid-cols-12 relative shadow-2xl border border-primary-green/10 max-h-[90vh] md:max-h-none overflow-y-auto md:overflow-visible"
-              >
-                
-                {/* Close Button */}
-                <button
-                  onClick={() => setActiveProductModal(null)}
-                  className="absolute top-4 right-4 z-10 bg-primary-green/10 hover:bg-primary-green text-primary-green hover:text-white p-2.5 rounded-full transition-colors duration-300 shadow-md cursor-pointer"
-                  aria-label={t('Tutup detail', 'Close details')}
-                >
-                  <X size={16} />
-                </button>
 
-                {/* Left: Product Image Details */}
-                <div className="md:col-span-5 relative bg-[#202020]/5 aspect-square md:aspect-auto">
-                  <img
-                    src={activeProductModal.image}
-                    alt={language === 'en' ? (activeProductModal.nameEn || activeProductModal.name) : activeProductModal.name}
-                    className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#202020]/50 via-transparent to-transparent md:hidden" />
-                  
-                  {/* Decorative Elements on Image */}
-                  <div className="absolute bottom-4 left-4 right-4 text-white md:hidden">
-                    <span className="font-display text-[9px] uppercase tracking-widest text-accent-gold font-bold">
-                      {language === 'en' ? (activeProductModal.originEn || activeProductModal.origin) : activeProductModal.origin}
-                    </span>
-                    <h3 className="font-display text-xl font-bold">{language === 'en' ? (activeProductModal.nameEn || activeProductModal.name) : activeProductModal.name}</h3>
-                  </div>
-                </div>
-
-                {/* Right: Custom Purchase Form */}
-                <div className="md:col-span-7 p-6 md:p-10 flex flex-col justify-between space-y-6">
-                  
-                  {/* Title & Info */}
-                  <div className="space-y-3">
-                    <div className="hidden md:block">
-                      <span className="font-display text-[10px] uppercase tracking-[0.2em] text-accent-gold font-bold block mb-1">
-                        {language === 'en' ? (activeProductModal.originEn || activeProductModal.origin) : activeProductModal.origin}
-                      </span>
-                      <h3 className="font-display text-3xl text-brand-text font-extrabold leading-tight">
-                        {language === 'en' ? (activeProductModal.nameEn || activeProductModal.name) : activeProductModal.name}
-                      </h3>
-                    </div>
-
-                    <div className="flex flex-wrap items-center gap-3 pt-1">
-                      <span className="bg-primary-green text-white text-[9px] font-display font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">
-                        {activeProductModal.roastLevel} Roast
-                      </span>
-                      {activeProductModal.process && (
-                        <span className="bg-accent-gold text-white text-[9px] font-display font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">
-                          {t('Proses', 'Process')} {language === 'en' ? (activeProductModal.processEn || activeProductModal.process) : activeProductModal.process}
-                        </span>
-                      )}
-                      {activeProductModal.scaScore && (
-                        <span className="bg-primary-green/10 text-primary-green text-[9px] font-display font-bold uppercase tracking-widest px-2.5 py-1 rounded-full flex items-center space-x-1">
-                          <Award size={10} className="text-accent-gold" />
-                          <span>SCA {activeProductModal.scaScore}</span>
-                        </span>
-                      )}
-                    </div>
-
-                    <p className="font-sans text-xs md:text-sm text-brand-gray leading-relaxed pt-2">
-                      {language === 'en' ? (activeProductModal.descriptionEn || activeProductModal.description) : activeProductModal.description}
-                    </p>
-
-                    {/* Metadata fields */}
-                    <div className="grid grid-cols-2 gap-4 bg-[#EAF5EF]/20 p-3.5 rounded-xl border border-primary-green/5 text-xs font-sans">
-                      {activeProductModal.elevation && (
-                        <div>
-                          <span className="text-brand-gray font-display text-[10px] block font-medium">{t('Ketinggian Kebun', 'Farm Elevation')}</span>
-                          <span className="font-semibold text-brand-text">{activeProductModal.elevation}</span>
-                        </div>
-                      )}
-                      {activeProductModal.process && (
-                        <div>
-                          <span className="text-brand-gray font-display text-[10px] block font-medium">{t('Pengolahan', 'Processing Method')}</span>
-                          <span className="font-semibold text-brand-text">{language === 'en' ? (activeProductModal.processEn || activeProductModal.process) : activeProductModal.process}</span>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Flavor Profile Highlight */}
-                  <div className="space-y-2.5">
-                    <span className="font-display text-[10px] uppercase tracking-wider text-[#202020]/50 font-bold block">
-                      {t('Profil Rasa & Karakter Cangkir', 'Flavor Profile & Cup Characteristics')}
-                    </span>
-                    <div className="flex flex-wrap gap-2">
-                      {(language === 'en' ? (activeProductModal.flavorNotesEn || activeProductModal.flavorNotes) : activeProductModal.flavorNotes).map((note) => (
-                        <span
-                          key={note}
-                          className="bg-accent-gold/10 text-accent-gold font-display font-bold text-xs px-3.5 py-1 rounded-full"
-                        >
-                          {note}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* WhatsApp Direct Action block */}
-                  <div className="pt-6 border-t border-primary-green/10 space-y-4">
-                    <div className="bg-[#FAF8F5] p-4 rounded-xl border border-primary-green/5 space-y-2 text-xs text-brand-gray">
-                      <p className="font-display text-[10px] uppercase tracking-wider text-[#202020] font-bold">{t('Informasi Ekspor & Sourcing', 'Export & Sourcing Information')}</p>
-                      <p className="leading-relaxed font-sans">
-                        {t(
-                          'Semua lot ekspor kami dikirimkan ke seluruh dunia dalam kemasan hermetis (GrainPro/Vakum). Silakan hubungi kami langsung via WhatsApp untuk mendiskusikan kebutuhan volume, penawaran harga, profil sangrai, atau pengiriman sampel resmi ke laboratorium roastery Anda.',
-                          'All our export lots are shipped worldwide in hermetic packaging (GrainPro/Vacuum). Please contact us directly via WhatsApp to discuss volume requirements, price quotes, roast profiles, or to arrange official sample shipments to your roastery lab.'
-                        )}
-                      </p>
-                    </div>
-
-                    <a
-                      href={`https://wa.me/6281230860124?text=${encodeURIComponent(
-                        language === 'en'
-                          ? `Hello Nayaka Export Atelier, I am interested in *${activeProductModal.nameEn || activeProductModal.name}* (SCA Score: ${activeProductModal.scaScore || 'N/A'}). Could I get more details on ordering or export samples?`
-                          : `Halo Nayaka Export Atelier, saya tertarik dengan kopi *${activeProductModal.name}* (Skor SCA: ${activeProductModal.scaScore || 'N/A'}). Bisa mohon info lebih lanjut untuk pemesanan/sampel ekspor?`
-                      )}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full bg-primary-green hover:bg-accent-gold text-white py-4 rounded-xl text-xs font-display font-bold uppercase tracking-widest transition-all duration-300 shadow-md flex items-center justify-center space-x-2.5 hover:shadow-lg text-center"
-                    >
-                      <Phone size={14} />
-                      <span>{t('Hubungi via WhatsApp', 'Contact via WhatsApp')}</span>
-                    </a>
-                  </div>
-
-                  {/* Trust Footer inside Modal */}
-                  <div className="flex items-center space-x-2 text-brand-gray justify-center">
-                    <ShieldCheck size={12} className="text-primary-green" />
-                    <span className="font-display text-[9px] uppercase tracking-wider font-semibold">
-                      {t('Jaminan Mutu Sensoris & Pengiriman Karbon Netral', 'Sensory Quality Guarantee & Carbon Neutral Shipping')}
-                    </span>
-                  </div>
-
-                </div>
-
-              </motion.div>
-            </motion.div>
-          )}
-        </AnimatePresence>
 
       </div>
     </section>

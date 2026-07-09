@@ -54,7 +54,7 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
           {/* Social Icons */}
           <div className="flex items-center space-x-3.5 pt-2">
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/nayakalabs"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-white/5 hover:bg-accent-gold hover:text-white flex items-center justify-center transition-all duration-300 border border-white/10"
@@ -63,7 +63,7 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
               <Instagram size={14} />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://nayakalabs.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-white/5 hover:bg-accent-gold hover:text-white flex items-center justify-center transition-all duration-300 border border-white/10"
@@ -72,7 +72,7 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
               <Facebook size={14} />
             </a>
             <a
-              href="https://tiktok.com"
+              href="https://nayakalabs.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-white/5 hover:bg-accent-gold hover:text-white flex items-center justify-center transition-all duration-300 border border-white/10"
@@ -156,7 +156,7 @@ export default function Footer({ onNavClick, onShopClick }: FooterProps) {
             <li className="flex items-start space-x-3">
               <MapPin size={14} className="text-accent-gold shrink-0 mt-0.5" />
               <span>
-                {t('Nayaka Export Atelier Lab,', 'Nayaka Export Atelier Lab,')} <br />
+                {t('Perum Kembang Permai, Bondowoso, Jawa Timur, Indonesia', 'Perum Kembang Permai, Bondowoso, Jawa Timur, Indonesia')} <br />
                 {t('Perum Kembang Permai, Bondowoso, Jawa Timur, Indonesia')}
               </span>
             </li>

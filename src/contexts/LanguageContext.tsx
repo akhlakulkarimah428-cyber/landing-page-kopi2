@@ -14,7 +14,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguageState] = useState<Language>(() => {
     const saved = localStorage.getItem('nayaka_language');
     if (saved === 'id' || saved === 'en') return saved;
-    return 'id'; // Default to Indonesian
+    return 'id'; 
   });
 
   const setLanguage = (lang: Language) => {

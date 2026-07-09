@@ -50,18 +50,18 @@ export default function BrandStory() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20 items-end">
           <div className="lg:col-span-6 space-y-4">
             <span className="font-display text-[10px] uppercase tracking-[0.25em] text-accent-gold font-bold block">
-              {t('Kisah Hebat Nayaka Export', 'The Great Saga of Nayaka Export')}
+              {t('Cerita Nayaka Export', 'The Nayaka Export Story')}
             </span>
             <h2 className="font-display text-4xl md:text-5xl text-brand-text leading-tight font-extrabold tracking-tight max-w-lg">
-              {t('Terroir Vulkanis Indonesia,', 'Indonesian Volcanic Terroirs,')} <br />
-              <span className="italic font-normal text-primary-green font-display">{t('Dipersembahkan untuk Dunia', 'Presented to the World')}</span>
+              {t('Tanah Vulkanik Indonesia,', 'Indonesian Volcanic Soil,')} <br />
+              <span className="italic font-normal text-primary-green font-display">{t('Untuk Seluruh Dunia', 'For the Whole World')}</span>
             </h2>
           </div>
           <div className="lg:col-span-6 lg:pl-12">
             <p className="font-sans text-xs md:text-sm text-brand-gray leading-relaxed max-w-xl">
               {t(
-                'Kami berspesialisasi dalam penyediaan, penilaian skor (grading), dan ekspor lot mikro kopi luar biasa dari Sumatra, Jawa Barat, dan Bali. Dengan bekerja sama langsung bersama pengelola perkebunan dan koperasi petani kecil, kami menjamin perdagangan yang transparan, praktik pertanian berkelanjutan, serta biji kopi hijau murni dengan standar mutu kompetisi.',
-                'We specialize in sourcing, grading, and exporting extraordinary coffee micro-lots from Sumatra, West Java, and Bali. By working directly with estate managers and smallholder cooperatives, we guarantee transparent trade, sustainable agricultural practices, and pristine green coffee beans of competition-grade quality.'
+                'Kami mencari, menilai, dan mengekspor lot mikro kopi terbaik dari Sumatra, Jawa Barat, dan Bali — bekerja langsung dengan pengelola kebun dan koperasi petani. Transparan, berkelanjutan, dan selalu dalam standar mutu kelas kompetisi.',
+                'We source, grade, and export the finest coffee micro-lots from Sumatra, West Java, and Bali — working directly with estate managers and farmer cooperatives. Transparent, sustainable, always competition-grade quality.'
               )}
             </p>
           </div>
@@ -114,12 +114,12 @@ export default function BrandStory() {
             
             <div className="space-y-6">
               <h3 className="font-display text-2xl md:text-3xl text-brand-text font-bold">
-                {t('Standar Keunggulan Ekspor Kopi', 'Standards of Coffee Export Excellence')}
+                {t('Standar Kopi Ekspor Kelas Dunia', 'World-Class Export Standards')}
               </h3>
               <p className="font-sans text-xs md:text-sm text-brand-gray leading-relaxed">
                 {t(
-                  'Kopi spesialti yang luar biasa membutuhkan kontrol kualitas ketat pada setiap tahap perdagangan. Mulai dari mengukur kadar gula ceri kopi, pengeringan di atas para-para jemur, sortasi density, hingga pengemasan hermetis GrainPro, kami memastikan karakter rasa asli daerah asal tetap terjaga utuh selama transit laut.',
-                  'Outstanding specialty coffee requires strict quality control at every stage of trade. From measuring coffee cherry sugar content, drying on raised beds, density sorting, to hermetic GrainPro packaging, we ensure the authentic flavor characteristics of the origin remain perfectly intact during maritime transit.'
+                  'Kopi spesialti yang luar biasa lahir dari kontrol kualitas yang ketat — dari mengukur kadar gula ceri, pengeringan di para-para, sortasi densitas, hingga pengemasan hermetis GrainPro. Semua demi memastikan karakter asli daerah asal tetap utuh sampai di tangan Anda.',
+                  'Great specialty coffee is born from rigorous quality control — from measuring cherry sugar content, drying on raised beds, density sorting, to hermetic GrainPro packaging. All to ensure the authentic character of the origin stays intact until it reaches you.'
                 )}
               </p>
             </div>
@@ -131,11 +131,11 @@ export default function BrandStory() {
                   <Leaf size={18} className="stroke-[1.75]" />
                 </div>
                 <div>
-                  <h4 className="font-display text-xs font-bold text-brand-text">{t('Tanah Vulkanis Subur', 'Fertile Volcanic Soils')}</h4>
+                  <h4 className="font-display text-xs font-bold text-brand-text">{t('Tanah Vulkanik Subur', 'Volcanic Fertile Soil')}</h4>
                   <p className="text-[11px] text-brand-gray mt-1 leading-normal">
                     {t(
-                      'Nutrisi organik tinggi dari pegunungan vulkanis, ditanam ternaungi pohon pelindung.',
-                      'High organic nutrients from volcanic mountains, grown under shade-providing trees.'
+                      'Ditanam di bawah naungan pohon pelindung di pegunungan vulkanik yang kaya nutrisi.',
+                      'Shade-grown on nutrient-rich volcanic mountains.'
                     )}
                   </p>
                 </div>
@@ -146,11 +146,11 @@ export default function BrandStory() {
                   <Award size={18} className="stroke-[1.75]" />
                 </div>
                 <div>
-                  <h4 className="font-display text-xs font-bold text-brand-text">{t('Ketertelusuran Lot Mikro', 'Micro-Lot Traceability')}</h4>
+                  <h4 className="font-display text-xs font-bold text-brand-text">{t('Jejak Asal-Usul', 'Origin Traceability')}</h4>
                   <p className="text-[11px] text-brand-gray mt-1 leading-normal">
                     {t(
-                      'Kami melacak setiap karung hingga ke teras kebun asal dan koordinat ketinggian penanaman.',
-                      'We trace every bag back to its origin farm terraces and altitude coordinates.'
+                      'Setiap karung bisa dilacak hingga ke kebun dan ketinggian asalnya.',
+                      'Every bag can be traced back to its farm of origin and海拔 coordinates.'
                     )}
                   </p>
                 </div>
@@ -161,11 +161,11 @@ export default function BrandStory() {
                   <Compass size={18} className="stroke-[1.75]" />
                 </div>
                 <div>
-                  <h4 className="font-display text-xs font-bold text-brand-text">{t('Kesejahteraan Petani', 'Grower Welfare')}</h4>
+                  <h4 className="font-display text-xs font-bold text-brand-text">{t('Kesejahteraan Petani', 'Farmer Welfare')}</h4>
                   <p className="text-[11px] text-brand-gray mt-1 leading-normal">
                     {t(
-                      'Membayar hingga 4 kali lipat standar minimum perdagangan guna mendukung kehidupan petani lokal.',
-                      'Paying up to 4 times trade minimum standards to actively support local farming livelihoods.'
+                      'Kami membayar hingga 4 kali lipat standar pasar — karena petani yang sejahtera menghasilkan kopi terbaik.',
+                      'We pay up to 4x market standards — because thriving farmers grow the best coffee.'
                     )}
                   </p>
                 </div>
@@ -176,11 +176,11 @@ export default function BrandStory() {
                   <Heart size={18} className="stroke-[1.75]" />
                 </div>
                 <div>
-                  <h4 className="font-display text-xs font-bold text-brand-text">{t('Sangrai Udara Bersih', 'Clean Air Roasting')}</h4>
+                  <h4 className="font-display text-xs font-bold text-brand-text">{t('Sangrai Bersih', 'Clean Roasting')}</h4>
                   <p className="text-[11px] text-brand-gray mt-1 leading-normal">
                     {t(
-                      'Mesin sangrai konveksi Loring menjaga aroma kopi tetap murni bebas noda gosong karbon.',
-                      'Loring convection roasters preserve clean coffee aromatics free of carbon scorching.'
+                      'Mesin konveksi Loring menjaga aroma kopi tetap murni — tanpa bekas gosong.',
+                      'Loring convection roasters keep the coffee aromatics pure — no scorch marks.'
                     )}
                   </p>
                 </div>
@@ -199,7 +199,7 @@ export default function BrandStory() {
               {years}
             </div>
             <div className="font-display text-[9px] uppercase tracking-[0.2em] text-white/60 font-semibold">
-              {t('Tahun Sourcing & Ekspor', 'Years of Sourcing & Export')}
+              {t('Tahun Sourcing & Ekspor', 'Years Sourcing & Exporting')}
             </div>
           </div>
 
@@ -208,7 +208,7 @@ export default function BrandStory() {
               {farmers}
             </div>
             <div className="font-display text-[9px] uppercase tracking-[0.2em] text-white/60 font-semibold">
-              {t('Mitra Koperasi Tani', 'Cooperative Farm Partners')}
+              {t('Mitra Petani', 'Farm Partners')}
             </div>
           </div>
 
@@ -217,7 +217,7 @@ export default function BrandStory() {
               {customers}+
             </div>
             <div className="font-display text-[9px] uppercase tracking-[0.2em] text-white/60 font-semibold">
-              {t('Negara Tujuan Ekspor', 'Export Destination Countries')}
+              {t('Negara Tujuan', 'Export Destinations')}
             </div>
           </div>
 
@@ -226,7 +226,7 @@ export default function BrandStory() {
               {satisfaction}%
             </div>
             <div className="font-display text-[9px] uppercase tracking-[0.2em] text-white/60 font-semibold">
-              {t('Skor Cupping Konsisten', 'Consistent Cupping Score')}
+              {t('Skor Rata-Rata', 'Average Cupping Score')}
             </div>
           </div>
         </div>

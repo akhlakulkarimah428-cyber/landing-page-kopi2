@@ -17,23 +17,23 @@ export default function Hero({ onShopClick }: HeroProps) {
   const slideshowImages = [
     {
       url: 'https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=1200',
-      title: t('Perkebunan Kopi Ketinggian Ekstrem', 'Extreme Altitude Coffee Plantations'),
-      subtitle: t('Ceri kopi dipetik merah sempurna dari lereng vulkanik subur Nusantara.', 'Coffee cherries handpicked at peak ripeness from the fertile volcanic slopes of the Indonesian archipelago.')
+      title: t('Kebun Kopi di Ketinggian', 'High-Altitude Coffee Gardens'),
+      subtitle: t('Ceri merah ranum dipetik satu per satu dari lereng vulkanik terbaik Nusantara.', 'Ripe red cherries handpicked one by one from the finest volcanic slopes of Indonesia.')
     },
     {
       url: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1200',
-      title: t('Sortasi & Pengolahan Lot Mikro Harian', 'Daily Micro-Lot Sorting & Processing'),
-      subtitle: t('Sortasi manual (triple-picked) demi menyajikan mutu biji hijau bebas cacat.', 'Triple-picked manual sorting to deliver green coffee beans of impeccable specialty grade.')
+      title: t('Sortasi Manual Setiap Lot', 'Hand-Sorted Every Lot'),
+      subtitle: t('Setiap biji diperiksa satu per satu — tiga kali — untuk memastikan hanya yang terbaik.', 'Every bean is checked one by one — three times over — to ensure only the finest make the cut.')
     },
     {
       url: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1200',
-      title: t('Kemasan Hermetis Standardisasi Ekspor', 'Export-Standard Hermetic Packaging'),
-      subtitle: t('Dilindungi rami berteknologi GrainPro untuk kestabilan kadar air selama pelayaran.', 'Protected in jute bags with GrainPro hermetic technology to maintain moisture stability during ocean voyage.')
+      title: t('Kemasan Kedap Udara', 'Airtight Packaging'),
+      subtitle: t('Dibungkus karung rami dengan lapisan GrainPro — kadar air terjaga selama perjalanan laut.', 'Jute bags with GrainPro liners — stable moisture all the way across the ocean.')
     },
     {
       url: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1200',
-      title: t('Laboratorium Cupping Bersertifikat SCA', 'SCA-Certified Cupping Laboratory'),
-      subtitle: t('Konsistensi skor citarasa 88+ terverifikasi penuh oleh Q-Grader berlisensi.', 'Consistent sensory profile with 88+ SCA scores fully verified by licensed Q-Graders.')
+      title: t('Uji Rasa di Laboratorium', 'Cupping Lab Certified'),
+      subtitle: t('Setiap lot diuji oleh Q-Grader bersertifikat — memastikan cita rasa konsisten di atas skor 88+.', 'Every lot is tested by a certified Q-Grader — ensuring consistent flavor profiles above 88+.')
     }
   ];
 
@@ -105,28 +105,19 @@ export default function Hero({ onShopClick }: HeroProps) {
         <div className="lg:col-span-7 flex flex-col items-start space-y-6">
           
           {/* Quality Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="flex items-center space-x-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-sm"
-          >
-            <Award size={13} className="text-accent-gold animate-pulse" />
-            <span className="font-display text-[9px] font-bold text-white uppercase tracking-widest">
-              {t('Ekspor Spesialti Tersertifikasi SCA • 100% Direct Trade Indonesia', 'SCA-Certified Specialty Export • 100% Indonesian Direct Trade')}
-            </span>
-          </motion.div>
+         
+         
 
           {/* Elegant Heavy Title in Indonesian */}
           <motion.h1
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="font-display text-4xl md:text-5xl xl:text-6xl text-white leading-[1.1] tracking-tight font-extrabold"
+            className="font-display text-3xl md:text-4xl xl:text-5xl text-white leading-[1.1] tracking-tight font-extrabold mt-8 md:mt-16"
           >
-            {t('Kargo kopi', 'Pure specialty')}<br />
-            <span className="text-accent-gold font-normal italic font-serif">{t('spesialti murni,', 'coffee cargo,')}</span> <br />
-            {t('diekspor presisi.', 'exported with precision.')}
+            {t('Kopi Nusantara', 'Indonesian coffee')}<br />
+            <span className="text-accent-gold font-normal italic font-serif">{t('spesialti murni,', 'pure origins,')}</span> <br />
+            {t('siap ke seluruh dunia.', 'ready for the world.')}
           </motion.h1>
 
           {/* Sourcing Narrative Description */}
@@ -137,8 +128,8 @@ export default function Hero({ onShopClick }: HeroProps) {
             className="font-sans text-xs md:text-sm text-white/90 max-w-lg leading-relaxed"
           >
             {t(
-              'Kami menyuplai jaringan penyangrai kopi global dan importir komersial dengan lot mikro pilihan yang dikemas secara hermetis dari kawasan Gayo, lereng vulkanik Gunung Batur, dan terasering Jawa Barat. Menjamin skor SCA 88+ dengan ketertelusuran penuh dan kadar air stabil.',
-              'We supply global coffee roasting networks and commercial importers with selected premium micro-lots, hermetically packaged from Gayo, the volcanic slopes of Mount Batur, and the highlands of West Java. Guaranteeing SCA scores of 88+ with full traceability and stable moisture.'
+              'Kami mendampingi roastery dan importir kopi di seluruh dunia — menghadirkan lot mikro pilihan langsung dari perkebunan Gayo, lereng vulkanik Batur, dan dataran tinggi Jawa Barat. Setiap biji melewati seleksi ketat, dikemas hermetis, dan teruji dengan skor SCA 88+.',
+              'We partner with roasteries and importers worldwide — bringing selected micro-lots straight from the estates of Gayo, the volcanic slopes of Batur, and the highlands of West Java. Every bean is carefully sorted, hermetically sealed, and cupped at SCA 88+.'
             )}
           </motion.p>
 
@@ -153,7 +144,7 @@ export default function Hero({ onShopClick }: HeroProps) {
               onClick={onShopClick}
               className="bg-accent-gold hover:bg-white text-white hover:text-primary-green px-7 py-4 rounded-full text-[11px] font-display font-bold uppercase tracking-widest transition-all duration-300 shadow-luxury hover:shadow-luxury-hover hover:-translate-y-0.5 flex items-center justify-center space-x-2 cursor-pointer border border-accent-gold/20"
             >
-              <span>{t('Buka Dokumen Penawaran', 'Open Offer Sheet')}</span>
+              <span>{t('Lihat Katalog & Penawaran', 'View Catalog & Offers')}</span>
             </button>
 
             <button
@@ -163,7 +154,7 @@ export default function Hero({ onShopClick }: HeroProps) {
               <div className="w-4 h-4 flex items-center justify-center rounded-full bg-accent-gold text-white mr-1 group-hover:scale-110 transition-transform duration-300">
                 <Play size={6} className="fill-current ml-0.5" />
               </div>
-              <span>{t('Video Terroir Kami', 'Our Terroir Video')}</span>
+              <span>{t('Video Proses Roasting', 'Roasting Process Video')}</span>
             </button>
           </motion.div>
 
@@ -176,19 +167,19 @@ export default function Hero({ onShopClick }: HeroProps) {
           >
             <div className="flex items-center space-x-2.5 text-xs text-white/90">
               <ShieldCheck size={14} className="text-accent-gold shrink-0" />
-              <span className="font-sans">{t('Pelindung Hermetis GrainPro', 'GrainPro Hermetic Protection')}</span>
+              <span className="font-sans">{t('Kedap Udara GrainPro', 'GrainPro Airtight Seal')}</span>
             </div>
             <div className="flex items-center space-x-2.5 text-xs text-white/90">
               <Compass size={14} className="text-accent-gold shrink-0" />
-              <span className="font-sans">{t('Aktivitas Air Terkontrol', 'Controlled Water Activity')}</span>
+              <span className="font-sans">{t('Kadar Air Terjaga', 'Stable Moisture Level')}</span>
             </div>
             <div className="flex items-center space-x-2.5 text-xs text-white/90">
               <Leaf size={14} className="text-accent-gold shrink-0" />
-              <span className="font-sans">{t('Perkebunan Teduh Alami', 'Shade-Grown Plantation')}</span>
+              <span className="font-sans">{t('Ditanam di Bawah Naungan', 'Shade-Grown Coffee')}</span>
             </div>
             <div className="flex items-center space-x-2.5 text-xs text-white/90">
               <Box size={14} className="text-accent-gold shrink-0" />
-              <span className="font-sans">{t('Sampel Udara Express DHL', 'DHL Express Air Samples')}</span>
+              <span className="font-sans">{t('Sampel DHL ke Seluruh Dunia', 'Worldwide DHL Samples')}</span>
             </div>
           </motion.div>
 
@@ -203,7 +194,7 @@ export default function Hero({ onShopClick }: HeroProps) {
             <div className="absolute top-0 right-0 w-32 h-32 bg-accent-gold/10 rounded-full filter blur-xl pointer-events-none" />
             
             <span className="font-mono text-[9px] uppercase tracking-[0.25em] text-accent-gold font-bold block">
-              {t('Galeri Operasional Nayaka', 'Nayaka Operational Gallery')}
+              {t('Galeri Ekspor Nayaka', 'Nayaka Export Gallery')}
             </span>
 
             {/* Slider Text Information with smooth transitions */}
@@ -335,54 +326,14 @@ export default function Hero({ onShopClick }: HeroProps) {
                 <X size={16} />
               </button>
 
-              {/* Cinematic Content overlay */}
-              <div className="absolute inset-0 bg-brand-text flex items-center justify-center overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1200"
-                  alt="Cinematic Coffee Background"
-                  className="w-full h-full object-cover opacity-40 blur-[2px]"
-                  referrerPolicy="no-referrer"
-                />
-
-                <div className="relative text-center max-w-lg px-6 flex flex-col items-center space-y-4">
-                  <motion.div
-                    animate={{ scale: [1, 1.05, 1] }}
-                    transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-                    className="w-16 h-16 rounded-full bg-accent-gold flex items-center justify-center text-white shadow-2xl cursor-pointer"
-                  >
-                    <Play size={20} className="fill-current ml-1" />
-                  </motion.div>
-                  <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-accent-gold font-bold">
-                    {t('Sinema Asal-Usul Nayaka Atelier', 'Origin Cinema Nayaka Atelier')}
-                  </p>
-                  <h3 className="font-display text-2xl md:text-3xl text-white font-extrabold tracking-tight leading-tight">
-                    {t('Ziarah ke Perkebunan Ketinggian Ekstrem', 'Journey to Extreme Altitude Estates')}
-                  </h3>
-                  <p className="text-xs text-white/80 font-sans max-w-sm">
-                    {t(
-                      'Sebuah dokumenter sinematik pendek yang menggambarkan pemetikan organik, sortasi manual, dan pengolahan lot mikro harian.',
-                      'A short cinematic documentary depicting organic harvesting, manual sorting, and daily micro-lot processing.'
-                    )}
-                  </p>
-                </div>
-
-                {/* Simulated Player Controls */}
-                <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white/70 font-mono text-[9px] tracking-widest uppercase">
-                  <div className="flex items-center space-x-4">
-                    <button
-                      onClick={() => setIsMuted(!isMuted)}
-                      className="hover:text-white transition-colors cursor-pointer"
-                    >
-                      {isMuted ? <VolumeX size={15} /> : <Volume2 size={15} />}
-                    </button>
-                    <span>01:45 / 03:20</span>
-                  </div>
-                  <div className="flex-1 mx-6 h-[2px] bg-white/20 rounded-full overflow-hidden relative">
-                    <div className="absolute left-0 top-0 bottom-0 w-[45%] bg-primary-green" />
-                  </div>
-                  <span>4K HDR Master</span>
-                </div>
-              </div>
+              {/* YouTube Video Embed */}
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/N6BJVM5tvnw?autoplay=1&rel=0&modestbranding=1"
+                title="Coffee Roasting Explained"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </motion.div>
           </motion.div>
         )}
