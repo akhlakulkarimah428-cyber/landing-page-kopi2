@@ -198,39 +198,36 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
             </div>
 
             {/* Advanced Filters Expandable Drawer */}
-            <AnimatePresence>
-              {showAdvancedFilters && (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: 'auto', opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  className="overflow-hidden border-t border-t-primary-green/5 pt-5 mt-4"
-                >
-                  <div className="space-y-4">
-                    <div>
-                      <span className="font-display text-[9px] font-bold uppercase tracking-wider text-brand-gray block mb-2">
-                        {t('Saring Berdasarkan Metode Pengolahan Pasca-Panen', 'Filter by Post-Harvest Processing Method')}
-                      </span>
-                      <div className="flex flex-wrap gap-2">
-                        {allProcesses.map((proc) => (
-                          <button
-                            key={proc}
-                            onClick={() => setSelectedProcess(proc)}
-                            className={`px-4 py-2 rounded-lg text-[10px] font-sans font-semibold transition-all duration-300 ${
-                              selectedProcess === proc
-                                ? 'bg-accent-gold text-white shadow-sm'
-                                : 'bg-white border border-primary-green/5 hover:border-primary-green/25 text-brand-gray hover:text-primary-green'
-                            }`}
-                          >
-                            {proc === 'All' ? t('Semua Proses', 'All Processes') : proc}
-                          </button>
-                        ))}
-                      </div>
+            {showAdvancedFilters && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="border-t border-t-primary-green/5 pt-5 mt-4"
+              >
+                <div className="space-y-4">
+                  <div>
+                    <span className="font-display text-[9px] font-bold uppercase tracking-wider text-brand-gray block mb-2">
+                      {t('Saring Berdasarkan Metode Pengolahan Pasca-Panen', 'Filter by Post-Harvest Processing Method')}
+                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      {allProcesses.map((proc) => (
+                        <button
+                          key={proc}
+                          onClick={() => setSelectedProcess(proc)}
+                          className={`px-4 py-2 rounded-lg text-[10px] font-sans font-semibold transition-colors duration-300 ${
+                            selectedProcess === proc
+                              ? 'bg-accent-gold text-white shadow-sm'
+                              : 'bg-white border border-primary-green/5 hover:border-primary-green/25 text-brand-gray hover:text-primary-green'
+                          }`}
+                        >
+                          {proc === 'All' ? t('Semua Proses', 'All Processes') : proc}
+                        </button>
+                      ))}
                     </div>
                   </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
+                </div>
+              </motion.div>
+            )}
           </div>
         )}
 
@@ -272,7 +269,7 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.4 }}
                   key={product.id}
-                  className="bg-white rounded-[24px] border border-primary-green/10 overflow-hidden group shadow-luxury hover:shadow-luxury-hover transition-all duration-500 hover:-translate-y-1.5 flex flex-col justify-between h-full w-full sm:w-72 lg:w-80"
+                  className="bg-white rounded-[24px] border border-primary-green/10 overflow-hidden group shadow-luxury hover:shadow-luxury-hover transition-shadow duration-500 hover:-translate-y-1.5 flex flex-col justify-between h-full w-full sm:w-72 lg:w-80"
                 >
                   
                   {/* Product Thumbnail container */}
@@ -282,6 +279,7 @@ export default function FeaturedCoffee({ isHomepageOnly = false, onExploreFullCa
                       alt={language === 'en' ? (product.nameEn || product.name) : product.name}
                       className="w-full h-full object-cover transform scale-100 group-hover:scale-[1.05] transition-transform duration-[1.2s] ease-out"
                       referrerPolicy="no-referrer"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     

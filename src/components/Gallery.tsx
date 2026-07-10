@@ -94,7 +94,7 @@ export default function Gallery() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setActivePhotoIdx(null)}
-              className="fixed inset-0 z-50 bg-[#1F1F1F]/95 flex items-center justify-center p-6 backdrop-blur-md"
+              className="fixed inset-0 z-50 bg-[#1F1F1F]/95 flex items-center justify-center p-6"
             >
               
               {/* Close Button */}
@@ -117,18 +117,19 @@ export default function Gallery() {
 
               {/* Main Lightbox Content Area */}
               <motion.div
-                initial={{ scale: 0.95 }}
-                animate={{ scale: 1 }}
-                exit={{ scale: 0.95 }}
-                transition={{ type: 'spring', damping: 25, stiffness: 120 }}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.3 }}
                 onClick={(e) => e.stopPropagation()}
                 className="max-w-4xl max-h-[80vh] w-full flex flex-col items-center justify-center relative"
               >
                 <img
-                  src={galleryPhotos[activePhotoIdx].url}
+                  src={galleryPhotos[activePhotoIdx].url.replace('w=400', 'w=1200')}
                   alt={language === 'en' ? (galleryPhotos[activePhotoIdx].titleEn || galleryPhotos[activePhotoIdx].title) : galleryPhotos[activePhotoIdx].title}
                   className="max-w-full max-h-[70vh] rounded-[16px] object-contain border border-white/10 shadow-2xl"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
                 />
                 
                 <div className="mt-6 text-center text-white space-y-1">

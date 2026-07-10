@@ -16,22 +16,22 @@ export default function Hero({ onShopClick }: HeroProps) {
 
   const slideshowImages = [
     {
-      url: 'https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=1200',
+      url: 'https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=800',
       title: t('Kebun Kopi di Ketinggian', 'High-Altitude Coffee Gardens'),
       subtitle: t('Ceri merah ranum dipetik satu per satu dari lereng vulkanik terbaik Nusantara.', 'Ripe red cherries handpicked one by one from the finest volcanic slopes of Indonesia.')
     },
     {
-      url: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1200',
+      url: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=800',
       title: t('Sortasi Manual Setiap Lot', 'Hand-Sorted Every Lot'),
       subtitle: t('Setiap biji diperiksa satu per satu — tiga kali — untuk memastikan hanya yang terbaik.', 'Every bean is checked one by one — three times over — to ensure only the finest make the cut.')
     },
     {
-      url: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1200',
+      url: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800',
       title: t('Kemasan Kedap Udara', 'Airtight Packaging'),
       subtitle: t('Dibungkus karung rami dengan lapisan GrainPro — kadar air terjaga selama perjalanan laut.', 'Jute bags with GrainPro liners — stable moisture all the way across the ocean.')
     },
     {
-      url: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1200',
+      url: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800',
       title: t('Uji Rasa di Laboratorium', 'Cupping Lab Certified'),
       subtitle: t('Setiap lot diuji oleh Q-Grader bersertifikat — memastikan cita rasa konsisten di atas skor 88+.', 'Every lot is tested by a certified Q-Grader — ensuring consistent flavor profiles above 88+.')
     }
@@ -84,10 +84,10 @@ export default function Hero({ onShopClick }: HeroProps) {
             key={currentSlide}
             src={slideshowImages[currentSlide].url}
             alt={slideshowImages[currentSlide].title}
-            initial={{ opacity: 0, scale: 1.05 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            transition={{ duration: 1.2, ease: 'easeInOut' }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8, ease: 'easeInOut' }}
             className="absolute inset-0 w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
@@ -268,9 +268,10 @@ export default function Hero({ onShopClick }: HeroProps) {
               <motion.div
                 key={stat.label}
                 initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-50px' }}
                 transition={{ delay: 0.1 * i, duration: 0.5 }}
-                className={`p-6 rounded-[24px] border shadow-luxury hover:shadow-luxury-hover hover:-translate-y-1 transition-all duration-300 text-center md:text-left space-y-2 flex flex-col justify-between ${
+                className={`p-6 rounded-[24px] border shadow-luxury hover:shadow-luxury-hover hover:-translate-y-1 transition-transform duration-300 text-center md:text-left space-y-2 flex flex-col justify-between ${
                   i === 0 ? 'bg-amber-50/70 border-amber-200/50 text-amber-900' :
                   i === 1 ? 'bg-emerald-50/60 border-emerald-200/40 text-emerald-950' :
                   i === 2 ? 'bg-stone-50 border-stone-200/60 text-stone-900' :
@@ -308,13 +309,13 @@ export default function Hero({ onShopClick }: HeroProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-brand-text/95 flex items-center justify-center p-6 backdrop-blur-md"
+            className="fixed inset-0 z-50 bg-brand-text/95 flex items-center justify-center p-6"
           >
             <motion.div
-              initial={{ scale: 0.95, y: 20 }}
-              animate={{ scale: 1, y: 0 }}
-              exit={{ scale: 0.95, y: 20 }}
-              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.3 }}
               className="bg-white rounded-[24px] overflow-hidden max-w-4xl w-full aspect-video relative shadow-2xl border border-primary-green/10 flex flex-col justify-between"
             >
               {/* Close Button */}

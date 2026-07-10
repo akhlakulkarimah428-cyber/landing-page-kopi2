@@ -88,6 +88,7 @@ export default function BrandStory() {
                 alt="Coffee farm mist-shrouded mountain landscape"
                 className="w-full h-full object-cover hover:scale-[1.03] transition-transform duration-700 ease-out"
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
             </motion.div>
@@ -105,6 +106,7 @@ export default function BrandStory() {
                 alt="Farmers select perfect red cherries"
                 className="w-full h-full object-cover hover:scale-[1.03] transition-transform duration-700 ease-out"
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
             </motion.div>
           </div>
